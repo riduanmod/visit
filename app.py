@@ -19,7 +19,7 @@ def load_tokens(server_name):
         elif server_name in {"BR", "US", "SAC", "NA"}:
             path = "token_br.json"
         else:
-            path = "token_bd.json"
+            path = "token_BD.json"  # <-- এখানে ফাইলের নাম token_BD.json করে দেওয়া হলো
 
         with open(path, "r") as f:
             data = json.load(f)
